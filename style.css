@@ -1,0 +1,149 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+}
+
+/* Header */
+.quiz-header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.quiz-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c2c54;
+}
+
+/* Angled background */
+.quiz-background {
+  background: linear-gradient(160deg, #d0e7f9 45%, white 45.1%);
+  min-height: 100vh;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* Quiz container */
+.quiz-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Inputs */
+label {
+  font-weight: 500;
+  color: #444;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type="radio"] {
+  margin: 10px 5px 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  background-color: #6a0dad;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #550a8a;
+}
+
+/* Quiz content */
+#question {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.option-label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+/* Score display */
+#scoreDisplay {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Loader spinner */
+#loader {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #6a0dad;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Review box */
+.review-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Display radio button and label on the same line */
+#answersForm input[type="radio"] {
+  margin-right: 10px;
+}
+
+#answersForm label.option-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+/* Group each option in a line */
+#answersForm .option-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}

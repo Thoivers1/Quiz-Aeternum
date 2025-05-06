@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AI Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AI Quiz</h1>
+
+    <!-- Quiz Setup -->
+    <label for="category">Quiz Category:</label>
+    <input type="text" id="category" placeholder="Choose a category"><br><br>
+
+    <label>Select Difficulty:</label><br>
+    <input type="radio" name="difficulty" value="common knowledge"> Easy
+    <input type="radio" name="difficulty" value="tricky"> Medium
+    <input type="radio" name="difficulty" value="extremely hard"> Hard<br><br>
+
+    <button type="button" id="startBtn">Start Quiz</button>
+
+    <hr>
+
+    <!-- Quiz Area -->
+    <div id="quizArea" style="display:none;">
+        <div id="question" style="margin-bottom: 10px;"></div>
+        <form id="answersForm"></form>
+
+        <button type="button" id="submitBtn">Submit Answer</button>
+        <button type="button" id="restartBtn" style="display:none;">Restart Quiz</button>
+
+        <p id="scoreDisplay"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

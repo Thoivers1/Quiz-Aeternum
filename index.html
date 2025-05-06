@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz-Aeternum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="quiz-header">
+    <div class="quiz-title">Quiz-Aeternum</div>
+  </header>
+
+  <!-- Angled background -->
+  <div class="quiz-background">
+    <div class="quiz-container">
+  
+      <!-- Quiz Setup -->
+      <label for="category">Quiz Category:</label>
+      <input type="text" id="category" placeholder="What would you like to be quizzed about?"><br><br>
+
+      <label>Select Difficulty:</label><br>
+      <div class="difficulty-option">
+        <input type="radio" name="difficulty" value="easy"> Easy
+      </div>
+      <div class="difficulty-option">
+        <input type="radio" name="difficulty" value="medium"> Medium
+      </div>
+      <div class="difficulty-option">
+        <input type="radio" name="difficulty" value="hard"> Hard
+      </div>
+
+      <button type="button" id="startBtn">Start Quiz</button>
+
+      <!-- Quiz Area -->
+      <div id="quizArea" style="display:none;">
+        <div id="question" style="margin-bottom: 10px;"></div>
+        <form id="answersForm"></form>
+
+        <button type="button" id="submitBtn">Submit Answer</button>
+        <button type="button" id="restartBtn" style="display:none;">Restart Quiz</button>
+
+        <p id="scoreDisplay"></p>
+        <div id="reviewArea"></div>
+      </div>
+
+      <!-- Loader -->
+      <div id="loader" style="display: none;">
+        <p id="loaderText">Generating question... Please wait.</p>
+        <div class="spinner"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
